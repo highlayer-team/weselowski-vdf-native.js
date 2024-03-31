@@ -6,7 +6,7 @@
     "build-go": "cd go && go build -o ../include/libvdf.so -buildmode=c-shared lib.go && cd ../",
     "build-binding": "node-gyp configure && node-gyp build"
   },
-  "main": "src/index.js",
+  "main": "lib/index.js",
   "author": "crimson@pentachoron.com",
   "license": "MIT",
   "dependencies": {

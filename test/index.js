@@ -1,4 +1,4 @@
-const vdf = require('../src/index');
+const vdf = require('../lib/index');
 
 // Testing the event loop
 
