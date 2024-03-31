@@ -401,7 +401,16 @@
     "v8_use_siphash": 1,
     "want_separate_host_toolset": 0,
     "nodedir": "/root/.cache/node-gyp/18.16.0",
-    "python": "/usr/bin/python3",
-    "standalone_static_library": 1
+    "standalone_static_library": 1,
+    "user_agent": "npm/9.5.1 node/v18.16.0 linux x64 workspaces/false",
+    "userconfig": "/root/.npmrc",
+    "local_prefix": "/root/kwak-software/weselowski-vdf-native.js",
+    "metrics_registry": "https://registry.npmjs.org/",
+    "prefix": "/usr/local",
+    "cache": "/root/.npm",
+    "node_gyp": "/usr/local/lib/node_modules/npm/node_modules/node-gyp/bin/node-gyp.js",
+    "globalconfig": "/usr/local/etc/npmrc",
+    "init_module": "/root/.npm-init.js",
+    "global_prefix": "/usr/local"
   }
 }
