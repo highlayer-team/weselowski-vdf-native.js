@@ -1,0 +1,14 @@
+{
+  "name": "weselowski-vdf-native",
+  "version": "1.0.0",
+  "description": "",
+  "scripts": {
+    "build": "echo \"Error: no test specified\" && exit 1"
+  },
+  "main": "src/index.js",
+  "author": "crimson@pentachoron.com",
+  "license": "MIT",
+  "dependencies": {
+    "node-addon-api": "^8.0.0"
+  }
+}

@@ -1,0 +1,1 @@
+cmd_Release/weselowski_vdf_bindings.node := ln -f "Release/obj.target/weselowski_vdf_bindings.node" "Release/weselowski_vdf_bindings.node" 2>/dev/null || (rm -rf "Release/weselowski_vdf_bindings.node" && cp -af "Release/obj.target/weselowski_vdf_bindings.node" "Release/weselowski_vdf_bindings.node")
