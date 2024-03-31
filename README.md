@@ -1,11 +1,11 @@
 # weselowski-vdf-native.js
 
-Implements [harmony-one/vdf](https://github.com/harmony-one/vdf)
+Bindings of [harmony-one/vdf](https://github.com/harmony-one/vdf) to node.js
 
 ## Installation
 
 
-## Build From Source
+### Build From Source
 1. You will need to build the `lib.go` file
     `cd go && go build -o ../include/libvdf.so -buildmode=c-shared lib.go && cd ../`
 2. Build the bindings with node-gyp
