@@ -21,10 +21,10 @@ func GenerateVDFWrapper(cSeed *C.char, iterations C.int, intSizeBits C.int) *C.c
     
     y, proofBlob := vdf.GenerateVDF(seed, int(iterations), int(intSizeBits))
 
-    output := append(y, proofBlob...)
-    outputStr := fmt.Sprintf("%x", output)
+  
+    stringifiedOutput := fmt.Sprintf("%x", proofBlob)
     
-    return C.CString(outputStr)
+    return C.CString(stringifiedOutput)
 }
 
 //export VerifyVDFWrapper
