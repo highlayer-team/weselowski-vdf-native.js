@@ -10,7 +10,7 @@ import (
 	"fmt"
 	"unsafe"
 
-	vdf "github.com/harmony-one/vdf/src/vdf_go"
+	vdf "github.com/pentachoron-research/vdf/src/vdf_go"
 )
 
 //export GenerateVDFWrapper

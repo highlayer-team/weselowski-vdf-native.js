@@ -43,13 +43,13 @@ CFLAGS_CC_Debug := \
 	-fexceptions
 
 INCS_Debug := \
-	-I/root/.cache/node-gyp/18.16.0/include/node \
-	-I/root/.cache/node-gyp/18.16.0/src \
-	-I/root/.cache/node-gyp/18.16.0/deps/openssl/config \
-	-I/root/.cache/node-gyp/18.16.0/deps/openssl/openssl/include \
-	-I/root/.cache/node-gyp/18.16.0/deps/uv/include \
-	-I/root/.cache/node-gyp/18.16.0/deps/zlib \
-	-I/root/.cache/node-gyp/18.16.0/deps/v8/include \
+	-I/root/.cache/node-gyp/18.16.1/include/node \
+	-I/root/.cache/node-gyp/18.16.1/src \
+	-I/root/.cache/node-gyp/18.16.1/deps/openssl/config \
+	-I/root/.cache/node-gyp/18.16.1/deps/openssl/openssl/include \
+	-I/root/.cache/node-gyp/18.16.1/deps/uv/include \
+	-I/root/.cache/node-gyp/18.16.1/deps/zlib \
+	-I/root/.cache/node-gyp/18.16.1/deps/v8/include \
 	-I$(srcdir)/node_modules/node-addon-api \
 	-I$(srcdir)/include
 
@@ -91,13 +91,13 @@ CFLAGS_CC_Release := \
 	-fexceptions
 
 INCS_Release := \
-	-I/root/.cache/node-gyp/18.16.0/include/node \
-	-I/root/.cache/node-gyp/18.16.0/src \
-	-I/root/.cache/node-gyp/18.16.0/deps/openssl/config \
-	-I/root/.cache/node-gyp/18.16.0/deps/openssl/openssl/include \
-	-I/root/.cache/node-gyp/18.16.0/deps/uv/include \
-	-I/root/.cache/node-gyp/18.16.0/deps/zlib \
-	-I/root/.cache/node-gyp/18.16.0/deps/v8/include \
+	-I/root/.cache/node-gyp/18.16.1/include/node \
+	-I/root/.cache/node-gyp/18.16.1/src \
+	-I/root/.cache/node-gyp/18.16.1/deps/openssl/config \
+	-I/root/.cache/node-gyp/18.16.1/deps/openssl/openssl/include \
+	-I/root/.cache/node-gyp/18.16.1/deps/uv/include \
+	-I/root/.cache/node-gyp/18.16.1/deps/zlib \
+	-I/root/.cache/node-gyp/18.16.1/deps/v8/include \
 	-I$(srcdir)/node_modules/node-addon-api \
 	-I$(srcdir)/include
 
@@ -144,7 +144,7 @@ LDFLAGS_Release := \
 	-Wl,-rpath,'$$ORIGIN/'
 
 LIBS := \
-	-L/root/kwak-software/weselowski-vdf-native.js/include \
+	-L/root/highlayerd/weselowski-vdf-native.js/include \
 	-lvdf
 
 $(obj).target/weselowski_vdf_bindings.node: GYP_LDFLAGS := $(LDFLAGS_$(BUILDTYPE))
