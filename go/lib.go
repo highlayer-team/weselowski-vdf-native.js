@@ -10,7 +10,7 @@ import (
 	"fmt"
 	"unsafe"
 
-	vdf "github.com/harmony-one/vdf/src/vdf_go"
+	vdf "github.com/pentachoron-research/vdf/src/vdf_go"
 )
 
 //export GenerateVDFWrapper
@@ -21,10 +21,10 @@ func GenerateVDFWrapper(cSeed *C.char, iterations C.int, intSizeBits C.int) *C.c
     
     y, proofBlob := vdf.GenerateVDF(seed, int(iterations), int(intSizeBits))
 
-  
-    stringifiedOutput := fmt.Sprintf("%x", proofBlob)
+    output := append(y, proofBlob...)
+    outputStr := fmt.Sprintf("%x", output)
     
-    return C.CString(stringifiedOutput)
+    return C.CString(outputStr)
 }
 
 //export VerifyVDFWrapper
