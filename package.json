@@ -1,15 +1,15 @@
 {
-  "name": "weselowski-vdf-native",
+  "name": "wesolowski-vdf-native",
   "version": "1.0.0",
   "description": "Verfiable Delay Function",
   "scripts": {
     "build-go": "cd go && go build -o ../include/libvdf.so -buildmode=c-shared lib.go && cd ../",
-    "build-binding": "node-gyp configure && node-gyp build",
-    "prepublishOnly": "node-gyp rebuild && npm run clean",
+    "build-binding": "node-gyp configure && node-gyp rebuild && cp ./include/* ./build/Release/",
+    "prepublishOnly": "node-gyp rebuild && npm run clean && cp ./include/* ./build/Release/",
     "clean": "rm -rf build/* && node-gyp configure build"
   },
   "main": "lib/index.js",
-  "author": "crimson@pentachoron.com",
+  "author": "crimson@pentachoron.tech",
   "license": "MIT",
   "dependencies": {
     "node-addon-api": "^8.0.0"

@@ -43,13 +43,13 @@ CFLAGS_CC_Debug := \
 	-fexceptions
 
 INCS_Debug := \
-	-I/root/.cache/node-gyp/18.16.1/include/node \
-	-I/root/.cache/node-gyp/18.16.1/src \
-	-I/root/.cache/node-gyp/18.16.1/deps/openssl/config \
-	-I/root/.cache/node-gyp/18.16.1/deps/openssl/openssl/include \
-	-I/root/.cache/node-gyp/18.16.1/deps/uv/include \
-	-I/root/.cache/node-gyp/18.16.1/deps/zlib \
-	-I/root/.cache/node-gyp/18.16.1/deps/v8/include \
+	-I/root/.cache/node-gyp/18.20.2/include/node \
+	-I/root/.cache/node-gyp/18.20.2/src \
+	-I/root/.cache/node-gyp/18.20.2/deps/openssl/config \
+	-I/root/.cache/node-gyp/18.20.2/deps/openssl/openssl/include \
+	-I/root/.cache/node-gyp/18.20.2/deps/uv/include \
+	-I/root/.cache/node-gyp/18.20.2/deps/zlib \
+	-I/root/.cache/node-gyp/18.20.2/deps/v8/include \
 	-I$(srcdir)/node_modules/node-addon-api \
 	-I$(srcdir)/include
 
@@ -91,13 +91,13 @@ CFLAGS_CC_Release := \
 	-fexceptions
 
 INCS_Release := \
-	-I/root/.cache/node-gyp/18.16.1/include/node \
-	-I/root/.cache/node-gyp/18.16.1/src \
-	-I/root/.cache/node-gyp/18.16.1/deps/openssl/config \
-	-I/root/.cache/node-gyp/18.16.1/deps/openssl/openssl/include \
-	-I/root/.cache/node-gyp/18.16.1/deps/uv/include \
-	-I/root/.cache/node-gyp/18.16.1/deps/zlib \
-	-I/root/.cache/node-gyp/18.16.1/deps/v8/include \
+	-I/root/.cache/node-gyp/18.20.2/include/node \
+	-I/root/.cache/node-gyp/18.20.2/src \
+	-I/root/.cache/node-gyp/18.20.2/deps/openssl/config \
+	-I/root/.cache/node-gyp/18.20.2/deps/openssl/openssl/include \
+	-I/root/.cache/node-gyp/18.20.2/deps/uv/include \
+	-I/root/.cache/node-gyp/18.20.2/deps/zlib \
+	-I/root/.cache/node-gyp/18.20.2/deps/v8/include \
 	-I$(srcdir)/node_modules/node-addon-api \
 	-I$(srcdir)/include
 
@@ -134,14 +134,14 @@ $(obj).$(TOOLSET)/$(TARGET)/%.o: $(obj)/%.cpp FORCE_DO_CMD
 LDFLAGS_Debug := \
 	-pthread \
 	-rdynamic \
-	-m64 \
-	-Wl,-rpath,'$$ORIGIN/'
+	-Wl,-rpath,'$$ORIGIN/' \
+	-m64
 
 LDFLAGS_Release := \
 	-pthread \
 	-rdynamic \
-	-m64 \
-	-Wl,-rpath,'$$ORIGIN/'
+	-Wl,-rpath,'$$ORIGIN/' \
+	-m64
 
 LIBS := \
 	-L/root/highlayerd/weselowski-vdf-native.js/include \
